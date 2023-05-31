@@ -89,6 +89,7 @@ LOM stands for Levenshtein Originality Metric, a totally real name btw. It works
 2. Get score by dividing distance by length of original message
 3. If score is below originality threshold, halt loop and deem message as unoriginal
 4. If loop completes without halting, message is original
+
 This allows the bot to detect small edits to original messages as unoriginal, something the basic 'hash message, check if its already in hash list' algorithm could not do.
 ## License
 Licensed under the [MIT license](LICENSE) or something, idk
