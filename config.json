@@ -1,0 +1,18 @@
+{
+    "prefix":"!",
+    "initialMutePeriod":2,
+    "muteMultiplier":4,
+    "muteDecayMultiplier":2,
+    "decayTime":21600,
+    "ignoreStaff":false,
+    "allowAttachments":true,
+    "filterList":{
+        "mentions":true,
+        "channels":true,
+        "links":false,
+        "defaultEmojis":false,
+        "customEmojis":true,
+        "punctuation":true
+    },
+    "evalAccess":["398524149682667530"]
+}
