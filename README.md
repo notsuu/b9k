@@ -28,7 +28,7 @@ npm i
   ```
   TOKEN=bot_token_here
   ```
-5. With the bot invited, update the `config.json` file as desired (see Configuration)
+5. With the bot invited, update the `config.json` file as desired (see [Configuration](README.md#Configuration))
 6. Start the bot by running
   ```
   node .
@@ -38,7 +38,7 @@ b9k comes with a few commands to streamline usage. All of them, excluding `!stat
 ### `!add`
 Adds the channel this command is ran in to the watchlist, meaning it'll be monitored for originality
 ### `!remove`
-Opposite of `!add` - removes the channel from the watchlist. Be aware, however, that this will also clear the list of messages marked as original.
+Opposite of [`!add`](README.md#add) - removes the channel from the watchlist. Be aware, however, that this will also clear the list of messages marked as original.
 ### `!watchlist`
 View a list of monitored channels, and how much original messages have been recorded in them.
 ### `!stats`
@@ -47,16 +47,16 @@ Allows you to view your personal statistics, including:
 - Whether or not you're currently muted, and how long until the mute expires/decays
 - How long your mute is/was, how long itll be next time and after it decays
 ### `!lom`
-Switches LOM on/off. See What is LOM? for details.
+Switches LOM on/off. See [What is LOM?](README.md#what-is-lom) for details.
 ### `!eval`
-Evaluates JavaScript code - as this is highly dangerous, you must specify who can run this command in your config - see Configuration for details.
+Evaluates JavaScript code - as this is highly dangerous, you must specify who can run this command in your config - see [Configuration](README.md#Configuration) for details.
 You can also use this update configuration on the fly, for example
 ```
 updateConfig('prefix="?"')
 ```
 would set the command prefix to `?`.
 ### `!clear`
-Clears *all* server data without confirmation. Requires user to have `!eval` access to run.
+Clears *all* server data without confirmation. Requires user to have [`!eval`](README.md#eval) access to run.
 ## Configuration
 Most aspects of the bot can be configured using the `config.json` file. Here they are, as follows:
 ### `prefix` (`string`)
@@ -78,7 +78,7 @@ Whether or not should the bot ignore messages that have attachments, but no text
 ### `filterList` (`boolean[]`)
 List of things the bot should ignore when filtering messages.
 ### `evalAccess` (`string[]`)
-List of user ID's that can access the `!eval` and `!clear` commands. These must be in string format:
+List of user ID's that can access the [`!eval`](README.md#eval) and [`!clear`](README.md#clear) commands. These must be in string format:
 ```diff
 + "evalAccess": ["123456789012345678"]
 - "evalAccess": [123456789012345678]
