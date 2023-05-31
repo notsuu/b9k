@@ -1,6 +1,6 @@
 {
     "prefix":"!",
-    "originalityThreshold": 0.4,
+    "originalityThreshold": 0.55,
     "initialMutePeriod":2,
     "muteMultiplier":4,
     "muteDecayMultiplier":2,
