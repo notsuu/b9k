@@ -90,7 +90,7 @@ async function run(message) {
 				await message.reply(`LOM has been ${server.useLOM ? 'enabled' : 'disabled'}.`);
 				break;
 			case `${config.prefix}clear`:
-				if (!isStaff) return;
+				if (!config.evalAccess.find(id => id == message.author.id)) return;
 				server = serverTemplate;
 				await message.reply('Server data cleared');
 				break;
