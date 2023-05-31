@@ -1,12 +1,25 @@
 {
   "dependencies": {
-    "better-sqlite3": "^8.4.0",
-    "canvas": "^2.11.0",
     "discord.js": "^14.8.0",
     "dotenv": "^16.1.0",
-    "js-levenshtein": "^1.1.6",
-    "nan": "^2.17.0",
-    "nodemon": "^2.0.22",
-    "sqlite3": "^5.1.6"
-  }
+    "js-levenshtein": "^1.1.6"
+  },
+  "name": "b9k",
+  "version": "1.0.0",
+  "description": "implementation of r9k in a discord bot",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notsuu/b9k.git"
+  },
+  "author": "notsu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notsuu/b9k/issues"
+  },
+  "homepage": "https://github.com/notsuu/b9k#readme"
 }
