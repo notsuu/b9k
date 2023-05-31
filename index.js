@@ -178,7 +178,7 @@ async function run(message) {
 						channel.messagesraw.every(message => {
 							let score = levenshtein(msg, message)/Math.max(message.length, 1)
 							console.log(msg, message, score)
-							isOriginal = score >= 0.4
+							isOriginal = score >= config.originalityThreshold
 							return isOriginal
 						})
 					}
