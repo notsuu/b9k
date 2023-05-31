@@ -54,6 +54,8 @@ async function run(message) {
 			]
 		}
 		let server = serverTemplate
+		//check if data directory exists, creating it if its not
+		if (!fs.existsSync(`./data`)) { fs.mkdirSync('./data') }
 		//check if server data already exists, overwriting server template
 		let serverDataExists = fs.existsSync(`./data/${message.guildId}.json`)
 		if (serverDataExists) { server = JSON.parse(fs.readFileSync(`./data/${message.guildId}.json`)) }
